@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cine</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="registrese_">Registrese!</string>
+    <string name="nombre">Nombre</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="edad">Edad</string>
+    <string name="confirme_password">Confirme Password</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="password">Password</string>
+    <string name="con_que_frecuencia_vas_al_cine_">Con que frecuencia vas al Cine?</string>
+    <string name="email">Email</string>
+    <string name="title_activity_elegir">ElegirActivity</string>
+    <string name="eliga_su_pelicula_favorita_de_la_semana_">Eliga su pelicula favorita de la semana:</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingrese_password">Ingrese Password</string>
+    <string name="ingrese_email">Ingrese email</string>
+    <string name="title_activity_aplication">AplicationActivity</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="textview">TextView</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="el_conjuro">El Conjuro</string>
+    <string name="descripcion_">Descripcion:</string>
+    <string name="cambiar_pelicula">Cambiar Pelicula</string>
+    <string name="elegir_cine">Elegir Cine</string>
+    <string name="title_activity_peli">PeliActivity</string>
+    <string name="title_activity_peli_db_helper">Peliculas</string>
+    <string name="title_activity_peliculas_db_helper">PeliculasDbHelper</string>
+    <string name="elija_su_pelicula_favorita_de_la_semana_">Elija su pelicula favorita de la semana:</string>
+    <string name="comentarios">Comentarios</string>
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cine"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.cine.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cine.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.cine.ElegirActivity"
+            android:label="@string/title_activity_elegir" >
+        </activity>
+        <activity
+            android:name="com.example.cine.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.cine.AplicationActivity"
+            android:label="@string/title_activity_aplication" >
+        </activity>
+        <activity
+            android:name="com.example.BD.PeliActivity"
+            android:label="@string/title_activity_peli" >
+        </activity>
+        <activity
+            android:name="com.example.cine.PeliDbHelper"
+            android:label="@string/title_activity_peli_db_helper" >
+        </activity>
+        <activity
+            android:name="com.example.BD.PeliculaDbHelper"
+            android:label="@string/title_activity_peliculas_db_helper" >
+        </activity>
+    </application>
+
+</manifest>

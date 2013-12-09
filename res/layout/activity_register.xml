@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/RegisText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registrese_" />
+
+    <EditText
+        android:id="@+id/RegisName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RegisText1"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/RegisEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegisName"
+        android:layout_below="@+id/RegisName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/RegisNacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/RegisEmail"
+        android:layout_below="@+id/RegisEmail"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/nacionalidad" />
+
+    <EditText
+        android:id="@+id/RegisEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegisNacion"
+        android:layout_below="@+id/RegisNacion"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/edad" />
+
+    <EditText
+        android:id="@+id/RegisPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegisEdad"
+        android:layout_below="@+id/RegisEdad"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/RegisPassConf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegisPass"
+        android:layout_below="@+id/RegisPass"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/confirme_password"
+        android:inputType="textPassword" />
+
+    <RatingBar
+        android:id="@+id/RegisFrecuencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisText2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/CrearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="onRegisterButtonClicked"
+        android:text="@string/crear_cuenta" />
+
+    <TextView
+        android:id="@+id/RegisText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RegisPassConf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/con_que_frecuencia_vas_al_cine_" />
+
+</RelativeLayout>
