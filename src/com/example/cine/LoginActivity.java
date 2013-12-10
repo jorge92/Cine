@@ -49,7 +49,7 @@ public class LoginActivity extends Activity {
                  editor.putBoolean(PreferencesHelper.IS_LOGGED_IN_KEY, true);
                  editor.commit();
                  
-                 Intent app = new Intent(this, AplicationActivity.class);
+                 Intent app = new Intent(this, ElegirActivity.class);
                  this.startActivity(app);
          }
          else

@@ -128,7 +128,7 @@ public class RegisterActivity extends Activity {
                         
                         Toast.makeText(this, "Profile updated!", Toast.LENGTH_LONG).show();
                         
-                        Intent app = new Intent(this, AplicationActivity.class);
+                        Intent app = new Intent(this, ElegirActivity.class);
                         this.startActivity(app);
                 }
                 else

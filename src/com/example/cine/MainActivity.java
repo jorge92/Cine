@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         }
         else
         {
-                Intent app = new Intent(this, AplicationActivity.class);
+                Intent app = new Intent(this, ElegirActivity.class);
                 this.startActivity(app);
         }
     }
