@@ -59,6 +59,19 @@ public class PeliculaDbAdapter {
 	 
 	      return c;
 	   }
+	   /**
+	    * Devuelve cursor con todos las columnas del registro
+	    */
+	   public Cursor getRegistro(long id) throws SQLException
+	   {
+	      Cursor c = db.query( true, C_TABLA, columnas, C_COLUMNA_ID + "=" + id, null, null, null, null, null);
+	 
+	      //Nos movemos al primer registro de la consulta
+	      if (c != null) {
+	         c.moveToFirst();
+	      }
+	      return c;
+	   }
 	}
 
 

@@ -35,5 +35,7 @@
     <string name="title_activity_peliculas_db_helper">PeliculasDbHelper</string>
     <string name="elija_su_pelicula_favorita_de_la_semana_">Elija su pelicula favorita de la semana:</string>
     <string name="comentarios">Comentarios</string>
+    <string name="titulo_pelicula">Titulo Pelicula</string>
+    <string name="obs">Obs</string>
 
 </resources>

@@ -31,18 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:textColor="#B40404"
         android:layout_centerHorizontal="true"
         android:text="@string/bienvenido" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="58dp"
-        android:layout_toLeftOf="@+id/textView2"
-        android:text="@string/descripcion_"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <RatingBar
         android:id="@+id/valorPeli"
@@ -52,12 +43,15 @@
         android:layout_centerVertical="true" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/appTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/valorPeli"
         android:layout_centerHorizontal="true"
-        android:text="@string/el_conjuro"
+        android:text="@string/titulo_pelicula"
+        android:textColor="#0B0B61"
+        android:textSize="30sp"
+        android:typeface="monospace"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
@@ -70,24 +64,34 @@
         android:onClick="onChangePelicula"
         android:text="@string/cambiar_pelicula" />
 
-    <Button
-        android:id="@+id/elegirCine"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/setting"
-        android:layout_alignBottom="@+id/setting"
-        android:layout_alignRight="@+id/textView3"
-        android:text="@string/elegir_cine" />
+       <TextView
+           android:id="@+id/label_observaciones"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/profile"
+           android:layout_below="@+id/valorPeli"
+           android:textSize="15sp"
+           android:text="@string/descripcion_"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <EditText
-        android:id="@+id/observaciones"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/elegirCine"
-        android:layout_below="@+id/textView3"
-        android:ems="10"
-        android:hint="@string/comentarios"
-        android:inputType="textMultiLine" />
+       <Button
+           android:id="@+id/elegirCine"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/setting"
+           android:layout_alignRight="@+id/profile"
+           android:text="@string/elegir_cine" />
+
+       <TextView
+           android:id="@+id/observacion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/label_observaciones"
+           android:layout_below="@+id/label_observaciones"
+           android:layout_marginTop="4dp"
+           android:textSize="12sp"
+           android:text="@string/obs"
+           android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

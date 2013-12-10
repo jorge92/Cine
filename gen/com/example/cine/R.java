@@ -35,18 +35,18 @@ public final class R {
         public static final int RegisText1=0x7f08000d;
         public static final int RegisText2=0x7f080015;
         public static final int action_settings=0x7f080017;
+        public static final int appTitulo=0x7f080004;
         public static final int elegirCine=0x7f080007;
         public static final int inEmail=0x7f08000a;
         public static final int inPass=0x7f08000c;
         public static final int ingresar=0x7f08000b;
+        public static final int label_observaciones=0x7f080006;
         public static final int logout=0x7f080001;
-        public static final int observaciones=0x7f080008;
+        public static final int observacion=0x7f080008;
         public static final int profile=0x7f080000;
-        public static final int setting=0x7f080006;
+        public static final int setting=0x7f080005;
         public static final int textView1=0x7f080009;
-        public static final int textView2=0x7f080004;
-        public static final int textView3=0x7f080003;
-        public static final int valorPeli=0x7f080005;
+        public static final int valorPeli=0x7f080003;
         public static final int welcome=0x7f080002;
     }
     public static final class layout {
@@ -90,6 +90,7 @@ public final class R {
         public static final int logout=0x7f050016;
         public static final int nacionalidad=0x7f050006;
         public static final int nombre=0x7f050005;
+        public static final int obs=0x7f050023;
         public static final int password=0x7f05000a;
         public static final int profile=0x7f050015;
         public static final int registrese_=0x7f050004;
@@ -101,6 +102,7 @@ public final class R {
         public static final int title_activity_peli_db_helper=0x7f05001e;
         public static final int title_activity_peliculas_db_helper=0x7f05001f;
         public static final int title_activity_register=0x7f050003;
+        public static final int titulo_pelicula=0x7f050022;
     }
     public static final class style {
         /** 
