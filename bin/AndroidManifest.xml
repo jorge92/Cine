@@ -50,6 +50,18 @@
             android:name="com.example.BD.PeliculaDbHelper"
             android:label="@string/title_activity_peliculas_db_helper" >
         </activity>
+        <activity
+            android:name="com.example.Historial.HistorialMainActivity"
+            android:label="@string/title_activity_historial_main" >
+        </activity>
+        <activity
+            android:name="com.example.Historial.HistorialActivity"
+            android:label="@string/title_activity_historial" >
+        </activity>
+        <activity
+            android:name="com.example.cine.HorarioActivity"
+            android:label="@string/title_activity_horario" >
+        </activity>
     </application>
 
 </manifest>

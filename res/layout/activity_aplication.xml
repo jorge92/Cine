@@ -53,7 +53,22 @@
         android:textSize="30sp"
         android:typeface="monospace"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+       <EditText
+           android:id="@+id/observaciones"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/label_observaciones"
+           android:ems="10"
+           android:hint="@string/obs"
+           android:textSize="12sp"
+           android:inputType="textMultiLine" >
 
+       </EditText>
+       
+       
+    
     <Button
         android:id="@+id/setting"
         style="?android:attr/buttonStyleSmall"
@@ -64,15 +79,7 @@
         android:onClick="onChangePelicula"
         android:text="@string/cambiar_pelicula" />
 
-       <TextView
-           android:id="@+id/label_observaciones"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_alignLeft="@+id/profile"
-           android:layout_below="@+id/valorPeli"
-           android:textSize="15sp"
-           android:text="@string/descripcion_"
-           android:textAppearance="?android:attr/textAppearanceMedium" />
+      
 
        <Button
            android:id="@+id/elegirCine"
@@ -80,18 +87,28 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_alignBottom="@+id/setting"
-           android:layout_alignRight="@+id/profile"
-           android:text="@string/elegir_cine" />
+           android:layout_toLeftOf="@+id/welcome"
+           android:onClick="onHistorialPelicula"
+           android:text="@string/historial_de_mis_peliculas" />
 
        <TextView
-           android:id="@+id/observacion"
+           android:id="@+id/label_observaciones"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:layout_alignLeft="@+id/label_observaciones"
-           android:layout_below="@+id/label_observaciones"
-           android:layout_marginTop="4dp"
-           android:textSize="12sp"
-           android:text="@string/obs"
-           android:textAppearance="?android:attr/textAppearanceSmall" />
+           android:layout_alignBottom="@+id/valorPeli"
+           android:layout_alignLeft="@+id/observaciones"
+           android:text="@string/descripcion"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textSize="12sp" />
+
+       <Button
+           android:id="@+id/button1"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_above="@+id/appTitulo"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="19dp"
+           android:text="@string/ver_horarios" />
 
 </RelativeLayout>

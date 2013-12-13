@@ -24,50 +24,67 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int CrearCuenta=0x7f080016;
-        public static final int RegisEdad=0x7f080011;
-        public static final int RegisEmail=0x7f08000f;
-        public static final int RegisFrecuencia=0x7f080014;
-        public static final int RegisNacion=0x7f080010;
-        public static final int RegisName=0x7f08000e;
-        public static final int RegisPass=0x7f080012;
-        public static final int RegisPassConf=0x7f080013;
-        public static final int RegisText1=0x7f08000d;
-        public static final int RegisText2=0x7f080015;
-        public static final int action_settings=0x7f080017;
+        public static final int CrearCuenta=0x7f080020;
+        public static final int RegisEdad=0x7f08001b;
+        public static final int RegisEmail=0x7f080019;
+        public static final int RegisFrecuencia=0x7f08001e;
+        public static final int RegisNacion=0x7f08001a;
+        public static final int RegisName=0x7f080018;
+        public static final int RegisPass=0x7f08001c;
+        public static final int RegisPassConf=0x7f08001d;
+        public static final int RegisText1=0x7f080017;
+        public static final int RegisText2=0x7f08001f;
+        public static final int action_settings=0x7f080021;
+        public static final int addButton=0x7f080011;
         public static final int appTitulo=0x7f080004;
-        public static final int elegirCine=0x7f080007;
-        public static final int inEmail=0x7f08000a;
-        public static final int inPass=0x7f08000c;
-        public static final int ingresar=0x7f08000b;
+        public static final int button1=0x7f080009;
+        public static final int deleteButton=0x7f080010;
+        public static final int elegirCine=0x7f080008;
+        public static final int emailField=0x7f08000d;
+        public static final int firstNameField=0x7f08000b;
+        public static final int horario=0x7f080013;
+        public static final int inEmail=0x7f080014;
+        public static final int inPass=0x7f080016;
+        public static final int ingresar=0x7f080015;
         public static final int label_observaciones=0x7f080006;
+        public static final int lastNameField=0x7f08000c;
         public static final int logout=0x7f080001;
-        public static final int observacion=0x7f080008;
+        public static final int obs=0x7f08000a;
+        public static final int observaciones=0x7f080005;
         public static final int profile=0x7f080000;
-        public static final int setting=0x7f080005;
-        public static final int textView1=0x7f080009;
+        public static final int saveButton=0x7f08000f;
+        public static final int setting=0x7f080007;
+        public static final int textView1=0x7f080012;
+        public static final int userField=0x7f08000e;
         public static final int valorPeli=0x7f080003;
         public static final int welcome=0x7f080002;
     }
     public static final class layout {
         public static final int activity_aplication=0x7f030000;
         public static final int activity_elegir=0x7f030001;
-        public static final int activity_login=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_register=0x7f030004;
+        public static final int activity_historial=0x7f030002;
+        public static final int activity_historial_main=0x7f030003;
+        public static final int activity_horario=0x7f030004;
+        public static final int activity_login=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_register=0x7f030007;
     }
     public static final class menu {
         public static final int aplication=0x7f070000;
         public static final int elegir=0x7f070001;
-        public static final int login=0x7f070002;
-        public static final int main=0x7f070003;
-        public static final int peli=0x7f070004;
-        public static final int peli_db_helper=0x7f070005;
-        public static final int peliculas_db_helper=0x7f070006;
-        public static final int register=0x7f070007;
+        public static final int historial=0x7f070002;
+        public static final int historial_main=0x7f070003;
+        public static final int horario=0x7f070004;
+        public static final int login=0x7f070005;
+        public static final int main=0x7f070006;
+        public static final int peli=0x7f070007;
+        public static final int peli_db_helper=0x7f070008;
+        public static final int peliculas_db_helper=0x7f070009;
+        public static final int register=0x7f07000a;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int agregar_pelicula=0x7f050025;
         public static final int app_name=0x7f050000;
         public static final int bienvenido=0x7f050018;
         public static final int cambiar_pelicula=0x7f05001b;
@@ -75,6 +92,7 @@ public final class R {
         public static final int con_que_frecuencia_vas_al_cine_=0x7f05000b;
         public static final int confirme_password=0x7f050008;
         public static final int crear_cuenta=0x7f050009;
+        public static final int descripcion=0x7f050030;
         public static final int descripcion_=0x7f05001a;
         public static final int edad=0x7f050007;
         public static final int el_conjuro=0x7f050019;
@@ -82,27 +100,43 @@ public final class R {
         public static final int eliga_su_pelicula_favorita_de_la_semana_=0x7f05000e;
         public static final int elija_su_pelicula_favorita_de_la_semana_=0x7f050020;
         public static final int email=0x7f05000c;
+        public static final int genero=0x7f05002a;
+        public static final int guardar_pelicula=0x7f050029;
         public static final int hello_world=0x7f050002;
+        public static final int historial_de_las_peliculas=0x7f05002b;
+        public static final int historial_de_mis_peliculas=0x7f05002d;
+        public static final int historial_de_peliculas_que_he_visto_en_el_cine_=0x7f05002e;
+        public static final int historial_de_peliculas_que_he_visto_este_a_o_=0x7f05002c;
+        public static final int horario_de_semanal=0x7f050033;
         public static final int ingresar=0x7f050011;
         public static final int ingrese_email=0x7f050013;
         public static final int ingrese_password=0x7f050012;
         public static final int iniciar_sesion=0x7f050010;
+        public static final int large_text=0x7f050035;
         public static final int logout=0x7f050016;
         public static final int nacionalidad=0x7f050006;
         public static final int nombre=0x7f050005;
+        public static final int nombre_pelicula=0x7f050027;
+        public static final int nota=0x7f050028;
+        public static final int nota_de_1_a_7=0x7f05002f;
         public static final int obs=0x7f050023;
         public static final int password=0x7f05000a;
         public static final int profile=0x7f050015;
         public static final int registrese_=0x7f050004;
+        public static final int small_text=0x7f050034;
         public static final int textview=0x7f050017;
         public static final int title_activity_aplication=0x7f050014;
         public static final int title_activity_elegir=0x7f05000d;
+        public static final int title_activity_historial=0x7f050026;
+        public static final int title_activity_historial_main=0x7f050024;
+        public static final int title_activity_horario=0x7f050032;
         public static final int title_activity_login=0x7f05000f;
         public static final int title_activity_peli=0x7f05001d;
         public static final int title_activity_peli_db_helper=0x7f05001e;
         public static final int title_activity_peliculas_db_helper=0x7f05001f;
         public static final int title_activity_register=0x7f050003;
         public static final int titulo_pelicula=0x7f050022;
+        public static final int ver_horarios=0x7f050031;
     }
     public static final class style {
         /** 

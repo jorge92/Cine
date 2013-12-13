@@ -8,9 +8,12 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.BD.PeliculaDbAdapter;
+import com.example.Historial.HistorialMainActivity;
 import com.example.cine.MainActivity.PreferencesHelper;
 
 public class AplicationActivity extends Activity {
@@ -32,12 +35,14 @@ public class AplicationActivity extends Activity {
 	   // Elementos de la vista
 	   //
 	   private TextView nombre;
-	   private TextView observaciones;
+	   private EditText observaciones;
+	   private RatingBar ratingPeli;
 	 
 	   @Override
 	   protected void onCreate(Bundle savedInstanceState) {
 	      super.onCreate(savedInstanceState);
 	      setContentView(R.layout.activity_aplication);
+	      
 	      
 	      
 
@@ -59,7 +64,8 @@ public class AplicationActivity extends Activity {
 	      // Obtenemos los elementos de la vista
 	      //
 	      nombre = (TextView) findViewById(R.id.appTitulo);
-	      observaciones = (TextView) findViewById(R.id.observacion);
+	      observaciones = (EditText) findViewById(R.id.observaciones);
+	      ratingPeli = (RatingBar) findViewById(R.id.valorPeli);
 	 
 	      //
 	      // Creamos el adaptador
@@ -82,6 +88,9 @@ public class AplicationActivity extends Activity {
 	      establecerModo(extra.getInt(ElegirActivity.C_MODO));
 	 
 	   }
+	   
+	   
+	   
 	 
 	   private void establecerModo(int m)
 	   {
@@ -103,12 +112,14 @@ public class AplicationActivity extends Activity {
 	 
 	      nombre.setText(cursor.getString(cursor.getColumnIndex(PeliculaDbAdapter.C_COLUMNA_NOMBRE)));
 	      observaciones.setText(cursor.getString(cursor.getColumnIndex(PeliculaDbAdapter.C_COLUMNA_OBSERVACIONES)));
+	      ratingPeli.setRating(cursor.getFloat(cursor.getColumnIndex(PeliculaDbAdapter.C_COLUMNA_SALA)));
 	   }
 	 
 	   private void setEdicion(boolean opcion)
 	   {
 	      nombre.setEnabled(opcion);
 	      observaciones.setEnabled(opcion);
+	      ratingPeli.setEnabled(opcion);
 	   }
 	
 
@@ -139,6 +150,14 @@ public class AplicationActivity extends Activity {
      Intent elegir = new Intent(this, ElegirActivity.class);
      this.startActivity(elegir);
 }
+ 
+ public void onHistorialPelicula(View view) {
+     Intent historial = new Intent(this, HistorialMainActivity.class);
+     this.startActivity(historial);
+}
+
+
+ 
 
 }
  

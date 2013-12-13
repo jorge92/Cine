@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class PeliculaDbHelper extends SQLiteOpenHelper {
 
-	   private static int version = 30;
+	   private static int version = 40;
 	   private static String name = "PeliculaDb" ;
 	   private static CursorFactory factory = null;
 	 
@@ -45,30 +45,20 @@ public class PeliculaDbHelper extends SQLiteOpenHelper {
 		   db.execSQL("INSERT INTO PELICULA(_id, peli_nombre) VALUES(4,'Carrie')");
 		   db.execSQL("INSERT INTO PELICULA(_id, peli_nombre) VALUES(5,'Jobs')");
 		   db.execSQL("INSERT INTO PELICULA(_id, peli_nombre) VALUES(6,'Lluvia de Hamburguesas 2')");
+	
 		   
-		 
-		   Log.i(this.getClass().toString(), "Datos iniciales PELICULA insertados");
-		 
-		   Log.i(this.getClass().toString(), "Base de datos creada");
 		   
-	   }
-	 
-	 // private static final String SQL_DROP_PELICULA =                                //eliminar tabla
-       //   "DROP TABLE IF EXISTS PELICULA"  ;
-	  
-	   @Override
-	   public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-	   {
-	      if (newVersion == 30)
-	      {
-	         db.execSQL("UPDATE PELICULA SET peli_observaciones = 'Espeluznante, terrorífica, agobiante y opresora… los epítetos se quedan cortos cuando se trata de describir " +
+		   db.execSQL("UPDATE PELICULA SET peli_observaciones = 'Espeluznante, terrorífica, agobiante y opresora… los epítetos se quedan cortos cuando se trata de describir " +
 	         		"las sensaciones que se derivan de “El Conjuro” (“The Conjuring”), un filme cuyo efecto se potencia al descubrir que se trata de una historia real; de un caso verídico.'" +
+	                     " WHERE _id = 1");
+		   
+		   db.execSQL("UPDATE PELICULA SET peli_horario = 'asdasdasdasd'" +
 	                     " WHERE _id = 1");
 	         
 	         db.execSQL("UPDATE PELICULA SET peli_observaciones = 'Thor lucha por restablecer el orden en todo el cosmos. " +
 	         		"Pero una antigua raza liderada por el vengativo Malekith regresa para volver a sumir al universo en la oscuridad. " +
 	         		"En este viaje se reunirá con Jane Foster y le obligará a sacrificar todo para salvar a los Nueve Reinos.'" +
-                     " WHERE _id = 2");
+                    " WHERE _id = 2");
 	         
 	         db.execSQL("UPDATE PELICULA SET peli_observaciones = 'En ella vemos como el humorista, después de alcanzar su show número mil, " +
 		         		"siente la necesidad de renovarse y decide aprovechar el contexto de las elecciones presidenciales en Chile para realizar un nuevo espectáculo. " +
@@ -90,11 +80,27 @@ public class PeliculaDbHelper extends SQLiteOpenHelper {
 		         		"chimpancés de camarón o arañas de queso con doble tocino, y cuyos nombres surgirán a partir de una serie de juegos de palabras a lo cringeworthy.'" +
 					                     " WHERE _id = 6");
 	         
+	       
 	         
-	       //  db.execSQL(SQL_DROP_PELICULA);
-	         // onCreate(db);
-	      }
-	    
+	         
+	         
+		 
+		   Log.i(this.getClass().toString(), "Datos iniciales PELICULA insertados");
+		 
+		   Log.i(this.getClass().toString(), "Base de datos creada");
+		   
+	   }
+	 
+	//  private static final String SQL_DROP_PELICULA =                                //eliminar tabla
+      //  "DROP TABLE IF EXISTS PELICULA"  ;
+	  
+	   @Override
+	   public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+	   {
+	      
+	      
+	     // db.execSQL(SQL_DROP_PELICULA);
+	       //onCreate(db);
 	     
   }
 	   

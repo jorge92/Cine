@@ -37,5 +37,23 @@
     <string name="comentarios">Comentarios</string>
     <string name="titulo_pelicula">Titulo Pelicula</string>
     <string name="obs">Obs</string>
+    <string name="title_activity_historial_main">HistorialMainActivity</string>
+    <string name="agregar_pelicula">Agregar Pelicula</string>
+    <string name="title_activity_historial">HistorialActivity</string>
+    <string name="nombre_pelicula">Nombre Pelicula</string>
+    <string name="nota">Nota</string>
+    <string name="guardar_pelicula">Guardar Pelicula</string>
+    <string name="genero">Genero</string>
+    <string name="historial_de_las_peliculas">Historial de las Peliculas</string>
+    <string name="historial_de_peliculas_que_he_visto_este_a_o_">Historial de peliculas que he visto este año:</string>
+    <string name="historial_de_mis_peliculas">Historial de mis peliculas</string>
+    <string name="historial_de_peliculas_que_he_visto_en_el_cine_">Historial de peliculas que he visto en el Cine:</string>
+    <string name="nota_de_1_a_7">Nota de 1 a 7</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="ver_horarios">Ver horarios</string>
+    <string name="title_activity_horario">HorarioActivity</string>
+    <string name="horario_de_semanal">Horario de Semanal</string>
+    <string name="small_text">Small Text</string>
+    <string name="large_text">Large Text</string>
 
 </resources>
