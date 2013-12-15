@@ -10,7 +10,7 @@ import android.util.Log;
 
 public class PeliculaDbHelper extends SQLiteOpenHelper {
 
-	   private static int version = 40;
+	   private static int version = 42;
 	   private static String name = "PeliculaDb" ;
 	   private static CursorFactory factory = null;
 	 
@@ -50,9 +50,6 @@ public class PeliculaDbHelper extends SQLiteOpenHelper {
 		   
 		   db.execSQL("UPDATE PELICULA SET peli_observaciones = 'Espeluznante, terrorífica, agobiante y opresora… los epítetos se quedan cortos cuando se trata de describir " +
 	         		"las sensaciones que se derivan de “El Conjuro” (“The Conjuring”), un filme cuyo efecto se potencia al descubrir que se trata de una historia real; de un caso verídico.'" +
-	                     " WHERE _id = 1");
-		   
-		   db.execSQL("UPDATE PELICULA SET peli_horario = 'asdasdasdasd'" +
 	                     " WHERE _id = 1");
 	         
 	         db.execSQL("UPDATE PELICULA SET peli_observaciones = 'Thor lucha por restablecer el orden en todo el cosmos. " +

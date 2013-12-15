@@ -62,6 +62,22 @@
             android:name="com.example.cine.HorarioActivity"
             android:label="@string/title_activity_horario" >
         </activity>
+        <activity
+            android:name="com.example.BuscaMinas.BuscaMinasMainActivity"
+            android:label="@string/title_activity_busca_minas_main" >
+        </activity>
+        <activity
+            android:name="com.example.BuscaMinas.CasillaActivity"
+            android:label="@string/title_activity_casilla" >
+        </activity>
+        <activity
+            android:name="com.example.cine.EncuestaActivity"
+            android:label="@string/title_activity_encuesta" >
+        </activity>
+        <activity
+            android:name="com.example.cine.RespuestaEnActivity"
+            android:label="@string/title_activity_respuesta_en" >
+        </activity>
     </application>
 
 </manifest>

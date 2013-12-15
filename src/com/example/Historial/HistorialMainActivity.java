@@ -13,6 +13,7 @@ import android.widget.ListView;
 import com.example.BdHistorial.MyDataSource;
 import com.example.Listener.ListViewItemClickListener;
 import com.example.MovieBD.Movie;
+import com.example.cine.EncuestaActivity;
 import com.example.cine.R;
 
 public class HistorialMainActivity extends ListActivity {
@@ -95,4 +96,10 @@ public class HistorialMainActivity extends ListActivity {
 		Intent i = new Intent(this, HistorialActivity.class);
 		this.startActivityForResult(i, REQUEST_CODE_ADD_MOVIE);
 	}
+	
+	 public void onEncuesta(View view) {
+	     Intent encuesta = new Intent(this, EncuestaActivity.class);
+	     this.startActivity(encuesta);
+	}
+
 }

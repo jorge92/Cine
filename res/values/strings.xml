@@ -55,5 +55,29 @@
     <string name="horario_de_semanal">Horario de Semanal</string>
     <string name="small_text">Small Text</string>
     <string name="large_text">Large Text</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="title_activity_busca_minas_main">BuscaMinas</string>
+    <string name="title_activity_casilla">Casilla</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="quieres_jugar_">Quieres jugar?</string>
+    <string name="title_activity_encuesta">EncuestaActivity</string>
+    <string name="accion">Accion</string>
+    <string name="terror">Terror</string>
+    <string name="ficcion">Ficcion</string>
+    <string name="tipo_de_genero_favorito_">Tipo de genero favorito:</string>
+    <string name="nacional">Nacional</string>
+    <string name="internacional">Internacional</string>
+    <string name="algun_comentario_">Algun comentario:</string>
+    <string name="ingrese_comentario_">Ingrese comentario!</string>
+    <string name="que_pelicula_prefiere_">Que pelicula prefiere:</string>
+    <string name="enviar">Enviar</string>
+    <string name="title_activity_respuesta_en">RespuestaEnActivity</string>
+    <string name="button">Button</string>
+    <string name="preferencia">Preferencia</string>
+    <string name="comentario_">Comentario:</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="responder_encuesta">Responder Encuesta</string>
+    <string name="salir">Salir</string>
+    <string name="res">Res</string>
 
 </resources>

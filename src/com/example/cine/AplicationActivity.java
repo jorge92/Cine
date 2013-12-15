@@ -13,6 +13,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.BD.PeliculaDbAdapter;
+import com.example.BuscaMinas.BuscaMinasMainActivity;
 import com.example.Historial.HistorialMainActivity;
 import com.example.cine.MainActivity.PreferencesHelper;
 
@@ -154,6 +155,11 @@ public class AplicationActivity extends Activity {
  public void onHistorialPelicula(View view) {
      Intent historial = new Intent(this, HistorialMainActivity.class);
      this.startActivity(historial);
+}
+ 
+ public void onBuscaMinas(View view) {
+     Intent buscaMinas = new Intent(this, BuscaMinasMainActivity.class);
+     this.startActivity(buscaMinas);
 }
 
 
